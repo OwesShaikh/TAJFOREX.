@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+    }
+
+    .title {
+      font-family: "Arial Black", sans-serif;
+      font-size: 40px;
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .social-media {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .social-media li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .social-media li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-media li a:hover {
+      color: #ccc;
+    }
+
+    .social-media li a i {
+      margin-right: 5px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .text {
+      text-align: center;
+      font-size: 24px;
+      color: #333;
+      margin: 20px;
+      font-weight: bold;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 600px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    .image-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-overlay img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .image-overlay.show {
+      display: flex;
+    }
+
+    img {
+      width: 400px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer; /* Added cursor pointer to indicate clickable images */
+    }
+
+    img:nth-child(3) {
+      width: 400px; /* Adjust the width as desired */
+    }
+
+    .contact {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      font-size: 20px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .contact a {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      margin-right: 10px;
+    }
+
+    .contact a:hover {
+      background-color: #666;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Taj Forex Logo" class="logo">
+    <h1 class="title">Welcome to Taj Forex</h1>
+  </header>
+  <nav>
+    <ul class="social-media">
+      <li><a href="https://youtube.com/@TAJFOREX" class="youtube"><img src="youtube.png" alt="YouTube Logo"></a></li>
+      <li><a href="https://t.me/TAJ_FOREX" class="telegram"><img src="telegram.png" alt="Telegram Logo"></a></li>
+      <li><a href="https://instagram.com/taj_forex_?igshid=ZGUzMzM3NWJiOQ==" class="instagram"><img src="instagram.png" alt="Instagram Logo"></a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <div class="text">
+      Unlock the Power of Insights: Follow us on the mentioned social media platforms for captivating analysis that will keep you hooked!
+    </div>
+    <div class="content">
+      <div class="image-container">
+        <img src="XU.jpeg" alt="Image 1" onclick="showImageOverlay('XU.jpeg')">
+        <div class="image-overlay">
+          <img src="XU.jpeg" alt="Image 1">
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="GU.jpeg" alt="Image 2" onclick="showImageOverlay('GU.jpeg')">
+        <div class="image-overlay">
+          <img src="GU.jpeg" alt="Image 2">
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="EU.jpeg" alt="Image 3" onclick="showImageOverlay('EU.jpeg')">
+        <div class="image-overlay">
+          <img src="EU.jpeg" alt="Image 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+    <div class="contact-info">
+      <p>Phone: <span id="phone-number">8855947235</span></p>
+      <p>Email: <span id="email-address">owess3305@gmail.com</span></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2023 Taj Forex. All rights reserved.
+  </footer>
+
+  <script>
+    function showImageOverlay(imageUrl) {
+      var imageOverlay = document.querySelector('.image-overlay');
+      var overlayImage = document.querySelector('.image-overlay img');
+      
+      overlayImage.src = imageUrl;
+      imageOverlay.classList.add('show');
+    }
+  </script>
+</body>
+<script>
+  function showImageOverlay(imageUrl) {
+    var imageOverlay = document.querySelector('.image-overlay');
+    var overlayImage = document.querySelector('.image-overlay img');
+
+    overlayImage.src = imageUrl;
+    imageOverlay.classList.add('show');
+
+    // Hide overlay when clicked
+    imageOverlay.addEventListener('click', function() {
+      imageOverlay.classList.remove('show');
+    });
+  }
+</script>
+
+</html>

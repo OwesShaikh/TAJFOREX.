@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px; /* Added missing 'px' unit */
+  padding: 0;
+  background-image: url('bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* Added 'center' value to center the background image */
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: "Arial Black", sans-serif;
+  font-size: 40px;
+  color: #333;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.social-media {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-media li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-media li a:hover {
+  color: #ccc;
+}
+
+.social-media li a i {
+  margin-right: 5px;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 200px; /* Customize the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media li a.youtube img {
+  width: 50px; /* Customize the width of the YouTube logo */
+  height: 50px; /* Customize the height of the YouTube logo */
+}
+
+.social-media li a.telegram img {
+  width: 50px; /* Customize the width of the Telegram logo */
+  height: 50px; /* Customize the height of the Telegram logo */
+}
+
+.social-media li a.instagram img {
+  width: 50px; /* Customize the width of the Instagram logo */
+  height: 50px; /* Customize the height of the Instagram logo */
+.text {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 20px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.text {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 20px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.text:before,
+.text:after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: #333;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text:before {
+  left: 10%;
+}
+
+.text:after {
+  right: 10%;
+}
+
+.text span {
+  position: relative;
+  z-index: 1;
+  background-color: #f2f2f2;
+  padding: 0 10px;
+}
+
+.text:before,
+.text:after,
+.text span {
+  transition: all 0.3s ease-in-out;
+}
+
+.text:hover:before,
+.text:hover:after,
+.text:hover span {
+  background-color: #333;
+  color: #fff;
+}
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.contact-info span {
+  font-weight: bold;
+  color: #333;
+}
+
